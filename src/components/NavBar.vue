@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-[#6A4E23] text-[#F5F5DC] p-4 font-cambria">
+    <nav class="bg-slate-200">
       <div class="container mx-auto flex justify-between items-center">
         <div class="flex items-center">
           <img src="" alt="BookVerse Logo" class="h-8 mr-4">
@@ -18,19 +18,19 @@
         </ul>
       </div>
     </nav>
-  </template>
-  
-  <script lang="ts">
-  export default {};
-  </script>
-  
-  <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Cambria&display=swap');
-  
-.font-cambria {
-  font-family: 'Cambria', 'Times New Roman', serif;
-}
+</template>
 
-  </style>
+<script lang="ts">
+    export default {};
+</script>
   
+<style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Cambria&display=swap');
+
+    .font-cambria {
+        font-family: 'Cambria', 'Times New Roman', serif;
+    }
+
+</style>
+
   
