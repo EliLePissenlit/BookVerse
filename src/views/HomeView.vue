@@ -1,3 +1,4 @@
+
 <template>
   <div class="home-page bg-gradient-to-r from-[#BBA782] to-[#D8C7AF] min-h-screen font-cambria">
     <!-- Slogan -->
@@ -115,7 +116,6 @@
 
 
     <!-- Footer -->
-    <Footer />
   </div>
 </template>
 

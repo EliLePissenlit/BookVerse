@@ -1,41 +1,32 @@
+<template>
+  <div>
+    <h1>Connexion</h1>
+    <form @submit.prevent="handleLogin">
+      <input type="text" v-model="username" placeholder="Nom d'utilisateur" />
+      <input type="password" v-model="password" placeholder="Mot de passe" />
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+</template>
+
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { ref } from 'vue';
 
-export default defineComponent({
-  name: 'Login',
+export default {
+  name: "Login",
   setup() {
-    const email = ref('');
+    const username = ref('');
     const password = ref('');
-    const error = ref('');
 
-    const login = async () => {
-      try {
-        const response = await fetch('https://api.realworld.io/api/users/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            user: {
-              email: email.value,
-              password: password.value
-            }
-          })
-        });
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        console.log('JWT:', data.user.token);
-        localStorage.setItem('jwt', data.user.token);
-      } catch (err) {
-        error.value = 'Failed to login: ' + err.message;
-      }
+    const handleLogin = () => {
+      console.log("Utilisateur :", username.value, "Mot de passe :", password.value);
     };
 
-    return { email, password, login, error };
-  }
-});
+    return {
+      username,
+      password,
+      handleLogin,
+    };
+  },
+};
 </script>

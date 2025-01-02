@@ -7,7 +7,7 @@
         
         <ul class="flex space-x-8 text-[#180D04] text-lg font-cambria mx-auto">
           <li>
-            <router-link to="/home" class="hover:text-[#D8C7AF] transition-colors duration-300 transform hover:scale-105">Accueil</router-link>
+            <router-link to="/" class="hover:text-[#D8C7AF] transition-colors duration-300 transform hover:scale-105">Accueil</router-link>
           </li>
           <li>
             <router-link to="/articles" class="hover:text-[#D8C7AF] transition-colors duration-300 transform hover:scale-105">Articles</router-link>

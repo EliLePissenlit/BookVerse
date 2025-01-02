@@ -1,23 +1,19 @@
 <template>
   <div>
     <NavBar />
-    <HomeView/>
-    <router-view />
-    <footer />
+    <router-view /> <!-- Affiche dynamiquement les pages -->
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import NavBar from "./components/NavBar.vue";
-import HomeView from "./views/HomeView.vue";
-import footer from "./components/footer.vue";
-
+import Footer from "./components/Footer.vue";
 
 export default {
   components: {
     NavBar,
-    HomeView,
-    footer,
+    Footer,
   },
 };
 </script>
