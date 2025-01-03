@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue"; // Assure-toi du chemin correct
+import HomeView from "../views/HomeView.vue"; 
 
 const routes = [
   {
@@ -10,7 +10,7 @@ const routes = [
   {
     path: "/articles",
     name: "articles",
-    component: () => import("../views/Articles.vue"), // Chargement dynamique
+    component: () => import("../views/Articles.vue"),
   },
   {
     path: "/about",
@@ -22,10 +22,20 @@ const routes = [
     name: "profile",
     component: () => import("../views/ProfileView.vue"),
   },
+  {
+    path: "/Login",
+    name: "login",
+    component: () => import("../views/Login.vue"),
+  },
+  {
+    path: "/Register",
+    name: "register",
+    component: () => import("../views/Register.vue"),
+  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL), // Utilise l'historique HTML5
+  history: createWebHistory(import.meta.env.BASE_URL), 
   routes,
 });
 

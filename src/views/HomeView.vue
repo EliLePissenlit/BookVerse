@@ -1,7 +1,6 @@
 
 <template>
   <div class="home-page bg-gradient-to-r from-[#BBA782] to-[#D8C7AF] min-h-screen font-cambria">
-    <!-- Slogan -->
     <header class="text-center py-12 pt-60">
       <h1 class="text-5xl font-bold text-[#4B2A12] tracking-wide">
         "Découvrez le pouvoir des mots"
@@ -11,7 +10,6 @@
       </p>
     </header>
 
-    <!-- Barre de recherche -->
     <section class="container mx-auto px-8 mt-8">
       <div class="flex justify-center">
         <input
@@ -24,9 +22,7 @@
       </div>
     </section>
 
-    <!-- Section divisée -->
     <section class="container mx-auto px-8 mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <!-- Image représentative -->
       <div class="flex justify-center">
         <img
           src="../assets/librairie.jpg"
@@ -35,7 +31,6 @@
         />
       </div>
 
-      <!-- Formulaire -->
       <div class="bg-white rounded-2xl shadow-xl p-8">
         <h2 class="text-3xl font-bold text-[#4B2A12] mb-6">
           Ajouter un article
@@ -115,7 +110,6 @@
 
 
 
-    <!-- Footer -->
   </div>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
   <div class="home-page bg-gradient-to-r from-[#BBA782] to-[#D8C7AF] min-h-screen font-cambria">
-    <!-- Titre de la page -->
     <header class="text-center py-12 pt-60">
       <h1 class="text-5xl font-bold text-[#4B2A12] tracking-wide">
         Nos Articles
@@ -10,7 +9,6 @@
       </p>
     </header>
 
-    <!-- Section Articles -->
     <section class="container mx-auto px-8 mt-16 pb-40">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
         <div
@@ -18,18 +16,15 @@
           :key="article.id"
           class="group relative bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
         >
-          <!-- Image de l'article -->
           <img
             :src="article.image"
             alt="Image de l'article"
             class="w-full h-48 object-cover rounded-t-lg"
           />
           <div class="p-6">
-            <!-- Titre de l'article -->
             <h3 class="text-lg font-semibold text-[#4B2A12] group-hover:text-[#DAB7A2] transition-colors duration-300">
               {{ article.title }}
             </h3>
-            <!-- Extrait de l'article -->
             <p class="text-[#180D04] text-sm mt-2 group-hover:text-[#4B2A12] transition-colors duration-300">
               {{ article.excerpt }}
             </p>
@@ -45,7 +40,6 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <Footer />
   </div>
 </template>

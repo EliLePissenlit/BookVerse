@@ -1,6 +1,5 @@
 <template>
   <div class="about-page bg-gradient-to-r from-[#BBA782] to-[#D8C7AF] min-h-screen font-cambria">
-    <!-- Header -->
     <header class="text-center py-12 pt-60">
       <h1 class="text-5xl font-bold text-[#4B2A12] tracking-wide">
         À Propos de Nous
@@ -10,7 +9,6 @@
       </p>
     </header>
 
-    <!-- Notre histoire -->
     <section class="container mx-auto px-8 mt-16">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-bold text-[#4B2A12]">Notre Histoire</h2>
@@ -19,7 +17,6 @@
         </p>
       </div>
 
-      <!-- Vision -->
       <div class="bg-white rounded-2xl shadow-xl p-8 text-center">
         <h3 class="text-2xl font-semibold text-[#4B2A12] mb-6">Notre Vision</h3>
         <p class="text-lg text-[#180D04]">
@@ -28,7 +25,6 @@
       </div>
     </section>
 
-    <!-- L'équipe -->
     <section class="container mx-auto px-8 mt-16">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-bold text-[#4B2A12]">Notre Équipe</h2>
@@ -37,7 +33,6 @@
         </p>
       </div>
 
-      <!-- Membres de l'équipe -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
           <img
@@ -77,7 +72,6 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <Footer />
   </div>
 </template>

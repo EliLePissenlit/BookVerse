@@ -7,7 +7,6 @@
           <p class="mt-2 text-lg text-[#2E1C00]">email@example.com</p>
         </section>
   
-        <!-- Profile Information Section -->
         <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           <div class="bg-[#F0E5D8] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <h2 class="text-2xl font-semibold text-[#4B2A12] mb-4">Informations personnelles</h2>
@@ -24,23 +23,19 @@
           </div>
         </section>
   
-        <!-- Actions Section -->
         <section class="mb-12">
           <h2 class="text-2xl font-extrabold text-[#4B2A12] text-center mb-8">Mes Actions</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <!-- Button to Edit Profile -->
             <div class="text-center bg-[#F0E5D8] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <button class="text-xl font-semibold text-[#4B2A12] hover:text-[#BBA782]">
                 Modifier le profil
               </button>
             </div>
-            <!-- Button to View Articles -->
             <div class="text-center bg-[#F0E5D8] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <button class="text-xl font-semibold text-[#4B2A12] hover:text-[#BBA782]">
                 Voir mes articles
               </button>
             </div>
-            <!-- Button to Log Out -->
             <div class="text-center bg-[#F0E5D8] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <button class="text-xl font-semibold text-red-600 hover:text-red-800">
                 Se déconnecter
@@ -49,7 +44,6 @@
           </div>
         </section>
   
-        <!-- Activity History Section -->
         <section class="bg-[#F0E5D8] py-12">
           <h2 class="text-2xl font-extrabold text-[#4B2A12] text-center mb-8">Historique des activités</h2>
           <div class="space-y-4">
@@ -76,7 +70,6 @@
   </script>
   
   <style scoped>
-  /* Effet de survol pour les cartes */
   .hover\:shadow-xl:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }

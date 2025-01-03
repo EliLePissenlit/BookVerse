@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar />
-    <router-view /> <!-- Affiche dynamiquement les pages -->
+    <router-view /> 
     <Footer />
   </div>
 </template>

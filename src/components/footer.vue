@@ -21,6 +21,5 @@
   </script>
   
   <style scoped>
-  /* Ajoute des styles spécifiques si nécessaire */
   </style>
   
