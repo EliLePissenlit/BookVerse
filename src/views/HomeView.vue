@@ -75,6 +75,19 @@
             ></textarea>
           </div>
 
+          <div>
+            <label for="photo" class="block text-lg font-medium text-[#180D04]">
+              Ajouter une photo
+            </label>
+            <input
+              type="file"
+              id="photo"
+              accept="image/*"
+              @change="handlePhotoUpload"
+              class="w-full px-4 py-2 border-2 border-[#3E1F1A] rounded-md text-[#180D04] bg-[#F5F0E1] focus:ring-2 focus:ring-[#4B2A12] focus:outline-none shadow-md transition-all duration-300"
+            />
+          </div>
+
           <button
             type="submit"
             class="w-full bg-[#4B2A12] text-white font-bold py-3 px-6 rounded-md shadow-lg hover:bg-[#D8C7AF] hover:text-[#180D04] transition-all duration-300"
@@ -127,7 +140,18 @@ export default {
       bookName: "",
       authorName: "",
       content: "",
+      photo: null as File | null,
+
     });
+
+    const handlePhotoUpload = (event: Event) => {
+      const file = (event.target as HTMLInputElement).files?.[0];
+      if (file) {
+        formData.value.photo = file;
+
+
+      }
+    };
 
     const books = ref([
       {
